@@ -1,6 +1,6 @@
 ﻿using Community.DTO;
 
-namespace Community.RepositoryInterfaces;
+namespace Community.IRepositories;
 
 public interface ICityRepository : IRepositoryBase<City>
 {

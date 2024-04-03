@@ -1,6 +1,6 @@
 ﻿using System.Linq.Expressions;
 
-namespace Community.RepositoryInterfaces;
+namespace Community.IRepositories;
 
 public interface IRepositoryBase<T> : IDisposable where T : class
 {
