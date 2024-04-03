@@ -1,5 +1,5 @@
 ﻿using Community.DBC;
-using Community.RepositoryInterfaces;
+using Community.IRepositories;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
@@ -18,9 +18,6 @@ internal abstract class RepositoryBase<T> : IRepositoryBase<T> where T : class
 
     public T GetById(params object[] id) =>
        _dbSet.Find(id) ?? throw new KeyNotFoundException($"Record with key {id} not found");
-    //New
-    public async Task<IEnumerable<T>> GetAllAsync() =>
-         await _dbSet.ToListAsync();
 
     public IQueryable<T> Set(Expression<Func<T, bool>> predicate) =>
         _dbSet.Where(predicate);
@@ -53,7 +50,7 @@ internal abstract class RepositoryBase<T> : IRepositoryBase<T> where T : class
     public void Delete(object id) =>
         Delete(GetById(id));
 
-    //Dont like #56 Delete
+    //Dont like #57 Delete
     public void Delete(T entity)
     {
         if (_context.Entry(entity).State == EntityState.Detached)
@@ -65,9 +62,6 @@ internal abstract class RepositoryBase<T> : IRepositoryBase<T> where T : class
     }
 
     //New
-    public void Dispose()
-    {
+    public void Dispose() =>
         _context.Dispose();
-    }
-
 }

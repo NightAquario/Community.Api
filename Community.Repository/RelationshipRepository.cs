@@ -1,6 +1,6 @@
 ﻿using Community.DBC;
 using Community.DTO;
-using Community.RepositoryInterfaces;
+using Community.IRepositories;
 
 namespace Community.Repositories;
 
