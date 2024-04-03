@@ -2,7 +2,7 @@
 using Community.IRepositories;
 using Community.Repositories;
 
-namespace Community.UnitOfWork;
+namespace Community.Repositories;
 
 public class UnitOfWork : IUnitOfWork
 {

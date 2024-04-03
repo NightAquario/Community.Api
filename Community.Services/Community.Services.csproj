@@ -6,9 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Community.DBC\Community.DBC.csproj" />
-    <ProjectReference Include="..\Community.IRepositories\Community.IRepositories.csproj" />
-  </ItemGroup>
-
 </Project>
