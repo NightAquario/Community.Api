@@ -29,8 +29,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repositories", "Repositorie
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Community.Repositories", "Community.Repository\Community.Repositories.csproj", "{5DADEB43-980C-4CAD-928A-30949B2B12E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Community.IRepositories", "Community.RepositoryInterfaces\Community.IRepositories.csproj", "{75BBFF26-AD9D-4BA7-9656-0BF7A2966C48}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,10 +55,6 @@ Global
 		{5DADEB43-980C-4CAD-928A-30949B2B12E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DADEB43-980C-4CAD-928A-30949B2B12E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DADEB43-980C-4CAD-928A-30949B2B12E5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{75BBFF26-AD9D-4BA7-9656-0BF7A2966C48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{75BBFF26-AD9D-4BA7-9656-0BF7A2966C48}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{75BBFF26-AD9D-4BA7-9656-0BF7A2966C48}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{75BBFF26-AD9D-4BA7-9656-0BF7A2966C48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -75,7 +69,6 @@ Global
 		{BECB1156-BC9C-4FE0-94E7-D8583967759C} = {1BCDEAC0-EA68-424D-95EB-54B818854E43}
 		{CDC1668A-580A-4B18-B1F4-F7AB1F4520DA} = {F2C2EA9D-230D-4DBE-B65A-0887DAE04D91}
 		{5DADEB43-980C-4CAD-928A-30949B2B12E5} = {CDC1668A-580A-4B18-B1F4-F7AB1F4520DA}
-		{75BBFF26-AD9D-4BA7-9656-0BF7A2966C48} = {BECB1156-BC9C-4FE0-94E7-D8583967759C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {21A04DFB-169C-4A91-8982-D840A33E1C02}
