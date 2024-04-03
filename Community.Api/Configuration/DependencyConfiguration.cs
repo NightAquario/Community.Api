@@ -1,6 +1,8 @@
 ﻿using Community.DBC;
 using Community.IRepositories;
 using Community.Repositories;
+using Community.Services;
+using Community.IServices;
 using Microsoft.EntityFrameworkCore;
 
 namespace Community.Api.Configuration;
@@ -14,6 +16,10 @@ public static class DependencyConfiguration
         var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
         builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+        builder.Services.AddScoped<ICityService, CityService>();
+        builder.Services.AddScoped<IContactInfoService, ContactInfoService>();
+        builder.Services.AddScoped<IPersonService, PersonService>();
+        builder.Services.AddScoped<IRelationshipService, RelationshipService>();
         builder.Services.AddDbContext<CommunityDBContext>(options => options.UseSqlServer(connectionString));
     }
 }

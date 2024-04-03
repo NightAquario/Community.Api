@@ -17,7 +17,9 @@
   <ItemGroup>
     <ProjectReference Include="..\Community.DBC\Community.DBC.csproj" />
     <ProjectReference Include="..\Community.IRepositories\Community.IRepositories.csproj" />
+    <ProjectReference Include="..\Community.IServices\Community.IServices.csproj" />
     <ProjectReference Include="..\Community.Repository\Community.Repositories.csproj" />
+    <ProjectReference Include="..\Community.Services\Community.Services.csproj" />
   </ItemGroup>
 
 </Project>
