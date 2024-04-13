@@ -5,7 +5,7 @@ namespace Community.IServices;
 public interface IPersonService
 {
     Task<Person> GetPerson(int personId);
-    Task<IQueryable<Person>> GetPersons();
+    Task<IEnumerable<Person>> GetPeople();
     void AddPerson(Person person);
     void UpdatePerson(Person person);
     void DeletePerson(int personId);

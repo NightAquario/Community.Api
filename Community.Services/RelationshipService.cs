@@ -21,8 +21,9 @@ public sealed class RelationshipService : IRelationshipService
         return Task.FromResult(relationship);
     }
 
-    public Task<IQueryable<Relationship>> GetRelationships()
+    public Task<IEnumerable<Relationship>> GetRelationships()
     {
+        //TODO
         throw new NotImplementedException();
     }
 

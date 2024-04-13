@@ -20,7 +20,7 @@ public sealed class PersonService : IPersonService
         
         return Task.FromResult(person);
     }
-    public Task<IQueryable<Person>> GetPersons()
+    public Task<IEnumerable<Person>> GetPeople()
     {
         throw new NotImplementedException();
     }
