@@ -29,17 +29,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repositories", "Repositorie
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Community.Repositories", "Community.Repository\Community.Repositories.csproj", "{5DADEB43-980C-4CAD-928A-30949B2B12E5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Community.IRepositories", "Community.IRepositories\Community.IRepositories.csproj", "{F128A24E-B845-4851-A9F5-D0D8AE3695C0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Community.IRepositories", "Community.IRepositories\Community.IRepositories.csproj", "{F128A24E-B845-4851-A9F5-D0D8AE3695C0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{C74FFF03-A791-4A03-A63B-4670A9861EF2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Community.Services", "Community.Services\Community.Services.csproj", "{E4411FF9-F824-4BA5-849A-B65F522C47C8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Community.Services", "Community.Services\Community.Services.csproj", "{E4411FF9-F824-4BA5-849A-B65F522C47C8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Community.IServices", "Community.IServices\Community.IServices.csproj", "{7474DF8C-92EC-4D6A-B07B-802ECB662D22}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Community.IServices", "Community.IServices\Community.IServices.csproj", "{7474DF8C-92EC-4D6A-B07B-802ECB662D22}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{89B06641-247E-4A2D-8DAC-F393A3A022BE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit Tests", "Unit Tests", "{84878645-D43F-49E0-9A9D-BD416EF0C505}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7CDA37D2-3652-429E-AA90-2771FE045566}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Community.Tests", "Community.Tests\Community.Tests.csproj", "{DBD20358-B71B-4E2C-9F0D-F9E30427A404}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -79,6 +83,10 @@ Global
 		{7474DF8C-92EC-4D6A-B07B-802ECB662D22}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7474DF8C-92EC-4D6A-B07B-802ECB662D22}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7474DF8C-92EC-4D6A-B07B-802ECB662D22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBD20358-B71B-4E2C-9F0D-F9E30427A404}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBD20358-B71B-4E2C-9F0D-F9E30427A404}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBD20358-B71B-4E2C-9F0D-F9E30427A404}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBD20358-B71B-4E2C-9F0D-F9E30427A404}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -98,6 +106,8 @@ Global
 		{E4411FF9-F824-4BA5-849A-B65F522C47C8} = {C74FFF03-A791-4A03-A63B-4670A9861EF2}
 		{7474DF8C-92EC-4D6A-B07B-802ECB662D22} = {BECB1156-BC9C-4FE0-94E7-D8583967759C}
 		{84878645-D43F-49E0-9A9D-BD416EF0C505} = {89B06641-247E-4A2D-8DAC-F393A3A022BE}
+		{7CDA37D2-3652-429E-AA90-2771FE045566} = {84878645-D43F-49E0-9A9D-BD416EF0C505}
+		{DBD20358-B71B-4E2C-9F0D-F9E30427A404} = {7CDA37D2-3652-429E-AA90-2771FE045566}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {21A04DFB-169C-4A91-8982-D840A33E1C02}
