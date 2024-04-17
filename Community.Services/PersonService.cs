@@ -20,22 +20,26 @@ public sealed class PersonService : IPersonService
         
         return Task.FromResult(person);
     }
+
     public Task<IEnumerable<Person>> GetPeople()
     {
         throw new NotImplementedException();
     }
+
     public void AddPerson(Person person)
     {
         if (person == null) throw new ArgumentNullException(nameof(person));
         _unitOfWork.PersonRepository.Insert(person);
         _unitOfWork.SaveChanges();
     }
+
     public void UpdatePerson(Person person)
     {
         if (person == null) throw new ArgumentNullException(nameof(person));
         _unitOfWork.PersonRepository.Update(person);
         _unitOfWork.SaveChanges();
     }
+
     public void DeletePerson(int personId)
     {
         Person person = _unitOfWork.PersonRepository.GetById(personId);

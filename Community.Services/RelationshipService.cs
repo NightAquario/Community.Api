@@ -33,6 +33,7 @@ public sealed class RelationshipService : IRelationshipService
         _unitOfWork.RelationshipRepository.Insert(relationship);
         _unitOfWork.SaveChanges();
     }
+
     public void UpdateRelationship(Relationship relationship)
     {
         if (relationship == null) throw new ArgumentNullException(nameof(relationship));
