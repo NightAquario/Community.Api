@@ -12,6 +12,7 @@ public class Program
         builder.Services.AddAuthorization();
         builder.ConfigureDependency();
 
+
         var app = builder.Build();
 
         // Configure the HTTP request pipeline.

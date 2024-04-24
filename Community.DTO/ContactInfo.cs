@@ -3,6 +3,7 @@
 public sealed class ContactInfo
 {
     public int Id { get; set; }
+    public int PersonId { get; set; }
     public Person Person { get; set; } = null!;
     public string Value { get; set; } = null!;
     public ContactType ContactType { get; set; }
