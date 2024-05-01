@@ -28,6 +28,7 @@ public class UnitOfWork : IUnitOfWork
 
     public int SaveChanges() =>
         _context.SaveChanges();
+
     public void BeginTransaction()
     {
         if (_context.Database.CurrentTransaction != null)
@@ -55,9 +56,6 @@ public class UnitOfWork : IUnitOfWork
         }
     }
 
-    public void Dispose() =>
-        _context.Dispose();
-
     public void RollBack()
     {
         try
@@ -69,5 +67,7 @@ public class UnitOfWork : IUnitOfWork
             _context.Database.CurrentTransaction?.Dispose();
         }
     }
+    public void Dispose() =>
+        _context.Dispose();
 
 }

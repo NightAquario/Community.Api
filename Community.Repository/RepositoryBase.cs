@@ -19,8 +19,12 @@ internal abstract class RepositoryBase<T> : IRepositoryBase<T> where T : class
     public T GetById(params object[] id) =>
        _dbSet.Find(id) ?? throw new KeyNotFoundException($"Record with key {id} not found");
 
+    async Task<T> IRepositoryBase<T>.GetAsync(params object[] id) => await _dbSet.FindAsync(id) ?? throw new KeyNotFoundException();
+
     public IQueryable<T> Set(Expression<Func<T, bool>> predicate) =>
         _dbSet.Where(predicate);
+
+    public async Task<IQueryable<T>> SetAsync() => (IQueryable<T>)await _dbSet.ToListAsync();
 
     public IQueryable<T> Set() =>
         _dbSet;
@@ -50,7 +54,6 @@ internal abstract class RepositoryBase<T> : IRepositoryBase<T> where T : class
     public void Delete(object id) =>
         Delete(GetById(id));
 
-    //Dont like #57 Delete
     public void Delete(T entity)
     {
         if (_context.Entry(entity).State == EntityState.Detached)
@@ -61,7 +64,6 @@ internal abstract class RepositoryBase<T> : IRepositoryBase<T> where T : class
         _dbSet.Remove(entity);
     }
 
-    //New
     public void Dispose() =>
         _context.Dispose();
 }

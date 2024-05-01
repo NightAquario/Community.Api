@@ -21,9 +21,10 @@ public sealed class PersonService : IPersonService
         return Task.FromResult(person);
     }
 
-    public Task<IEnumerable<Person>> GetPeople()
+    public async Task<IEnumerable<Person>> GetPeople()
     {
-        throw new NotImplementedException();
+        var people = await _unitOfWork.PersonRepository.SetAsync();
+        return people;
     }
 
     public void AddPerson(Person person)
